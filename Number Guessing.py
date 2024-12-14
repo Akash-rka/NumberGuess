@@ -61,15 +61,15 @@ def play_game():
 
         if feedback == '++++':
             end_time = time.time()
-            time_taken = round(end_time - start_time, 2)
+            time_taken = round(end_tie - start_time, 2)
             score = round(10000 / (time_taken + guesses), 2)
             print(f"Congratulations, {name}! You've guessed the number {computer_number}.")
             print(f"Time Taken: {time_taken} seconds | Guesses: {guesses} | Score: {score}")
-            save_result(name, time_taken, guesses, score)
+            save_result(name, tim_taken, guesses, score)
 
             best_score = get_best_score()
             if best_score:
-                print(f"Best Score: {best_score[0]} with a score of {best_score[1]:.2f}")
+                print(f"Best Score: {bet_score[0]} with a score of {best_score[1]:.2f}")
             break
 
 if __name__ == "__main__":
